@@ -26,7 +26,7 @@ async function handleSubmit(event) {
     try{
         activePokemon = await setPokemon(id);
     } catch {
-        setDescription(`El Pokémon numero ${id} no existe, intenta con otro.`);
+        setDescription(`El Pokémon ${id} no existe, intenta con otro.`);
         activePokemon = null;
         loader();
     }
