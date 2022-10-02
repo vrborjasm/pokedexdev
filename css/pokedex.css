@@ -1,0 +1,30 @@
+.pokedex {
+    display: flex;
+    block-size: 16.5rem;
+    max-inline-size: 38rem;
+    inline-size: 100%;
+    outline: none;
+    position: relative;
+    perspective: 1000px;
+}
+
+.pokedex:is(:hover, :focus, :focus-within, .is-open) .cover-front{
+    transform: rotateX(180deg);
+}
+
+.pokedex:is(:hover, :focus, :focus-within, .is-open) .cover-back{
+    transform: rotateX(0deg);
+}
+
+.pokedex-main {
+    inline-size: inherit;
+    block-size: inherit;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}

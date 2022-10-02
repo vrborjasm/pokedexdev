@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Pokédex</title>
+  </head>
+  <body>
+    <main class="pokedex" id="pokedex" tabindex="0">
+      <section
+        class="pokedex-main"
+        aria-label="Información general del Pokémon"
+      >
+        <div class="left-side-shadow">
+          <div class="left-side">
+            <span class="light is-big is-sky" id="light"></span>
+            <span class="light is-red"></span>
+            <span class="light is-yellow"></span>
+            <span class="light is-green"></span>
+          </div>
+        </div>
+        <div class="pokedex-info">
+          <div class="info-area" id="screen">
+            <div class="pokemon-img">
+              <img src="" id="image" />
+            </div>
+            <div class="pokemon-description">
+              <p id="description">
+                En este mundo lleno de criaturas, conócelas a todas, puedes
+                ingresar el número del Pokémon o utilizar la cruceta para
+                navegar
+              </p>
+            </div>
+          </div>
+          <form class="search" id="form">
+            <input
+              type="number"
+              name="id"
+              id="id"
+              placeholder="Ingresa el número del Pokémon que buscas."
+              autocomplete="off"
+            />
+          </form>
+        </div>
+        <div class="right-side-shadow">
+          <div class="right-side">
+            <div class="navigation">
+              <button
+                id="next-pokemon"
+                class="navigation-right"
+                aria-label="Siguiente Pokemon"
+              ></button>
+              <button
+                id="prev-pokemon"
+                class="navigation-left"
+                aria-label="Pokemon Anterior"
+              ></button>
+              <button
+                id="next-image"
+                class="navigation-down"
+                aria-label="Siguiente Variante"
+              ></button>
+              <button
+                id="prev-image"
+                class="navigation-up"
+                aria-label="Variante Anterior"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="cover-front">
+        <img src="./images/pokeball.png" alt="Pokeball" id="img-cover" />
+      </div>
+      <section class="cover-back" aria-label="Estadísticas del Pokémon">
+        <div class="stats">
+          <canvas id="stats"></canvas>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

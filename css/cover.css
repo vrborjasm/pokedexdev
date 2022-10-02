@@ -1,0 +1,44 @@
+#img-cover {
+    width: 20%;
+}
+
+.cover-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inline-size: inherit;
+    block-size: inherit;
+    background-color: var(--primary);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    transition: 1s transform;
+    transform-origin: top center;
+    backface-visibility: hidden;
+    border-block-start: .25rem solid var(--blue);
+    border-radius: 0rem 0rem .5rem .5rem;
+    box-sizing: border-box;
+    clip-path: polygon(6.3rem 0, 6.3rem 100%, calc(100% - 6.3rem) 100%, calc(100% - 6.3rem) 0);
+}
+
+.cover-back {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    inline-size: inherit;
+    block-size: inherit;
+    background-color: var(--primary);
+    backface-visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    transform: rotateX(-180deg);
+    inset-block-end: 100%;
+    transform-origin: bottom center;
+    transition: 1s transform;
+    padding: 1rem 7.25rem 1rem 7.25rem;
+    box-sizing: border-box;
+    border-radius: .5rem .5rem 0rem 0rem;
+    border-block-end: .25rem solid var(--blue);
+    box-sizing: border-box;
+    clip-path: polygon(6.3rem 0, 6.3rem 100%, calc(100% - 6.3rem) 100%, calc(100% - 6.3rem) 0);
+}

@@ -1,0 +1,37 @@
+@import "./pokedex.css";
+@import "./cover.css";
+@import "./sides.css";
+@import "./lights.css";
+@import "./navigation.css";
+@import "./stats.css";
+@import "./info-area.css";
+
+:root { 
+  --white: #fffffe; 
+  --black: #300f16; 
+  --blue: #31367c;
+  --primary: #3F448C; 
+  --secondary: #163355; 
+  --body1: 400 0.75rem/1.5rem Roboto; 
+  --body2-regular: 400 0.75rem/1.375rem 'monospace';  
+}
+
+body {
+  margin: 0;
+  padding: 6rem;
+  box-sizing: border-box;
+  color: var(--white);
+  font: var(--body1);
+  min-block-size: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: var(--secondary);
+}
+
+p{
+  color: var(--secondary);
+  font: var(--body2-regular);
+}
+
